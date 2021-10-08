@@ -1,32 +1,35 @@
 {
-  "name": "babel-plugin-function-injection",
-  "version": "1.0.0",
-  "description": "A Babel plugin to inject and wrap a function on an exported object",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abhishekraj272/babel-plugin-function-injection.git"
-  },
-  "keywords": [
-    "babel",
-    "plugin",
-    "javascript",
-    "function-injection"
-  ],
-  "author": "Abhishek Raj",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/abhishekraj272/babel-plugin-function-injection/issues"
-  },
-  "homepage": "https://github.com/abhishekraj272/babel-plugin-function-injection#readme",
-  "engines": {
-    "npm": ">=1.0.0",
-    "node": ">=1.0.0"
-  },
-  "devDependencies": {
-    "typescript": "^4.4.3"
-  }
+	"name": "babel-plugin-function-injection",
+	"version": "1.0.0",
+	"description": "A Babel plugin to inject and wrap a function on an exported object",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "babel src -d dist",
+		"prepare": "yarn build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/abhishekraj272/babel-plugin-function-injection.git"
+	},
+	"keywords": [
+		"babel",
+		"plugin",
+		"javascript",
+		"function-injection"
+	],
+	"author": "Abhishek Raj",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/abhishekraj272/babel-plugin-function-injection/issues"
+	},
+	"homepage": "https://github.com/abhishekraj272/babel-plugin-function-injection#readme",
+	"engines": {
+		"npm": ">=1.0.0",
+		"node": ">=1.0.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0"
+	}
 }
